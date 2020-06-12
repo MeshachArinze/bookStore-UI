@@ -1,7 +1,7 @@
 /* card */
 .card-box {
     display: grid;
-     grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
@@ -9,27 +9,99 @@
     padding: 20px;
 }
 .card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
     align-items: center;
-    padding: 10px 0px;
-    transition: all 0.5s;
-}  
-.card:hover{
-    transform: scale(0.8);
-    background-color: white;
-}  
+    grid-gap: 20px;
+}    
 .card-cover {
     width: 100%;
+    transition: all 0.5s;
 }
 
 .card-cover img {
     width: 100%;
 }
+.card-cover:hover{
+    transform: scale(0.8);
+    background-color: white;
+}
 
-.card h2 {
-    font-size: 2rem;
-    margin: 5px 0px;
+.card-details {
+    padding: 10px 20px 10px 10px;
+}
+.card-details p:first-of-type {
+    font-family: fontB;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    color: #5C6A79;
+}
+.card-details p:nth-of-type(2) {
+    font-family: fontA;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #1C2A39;
+}
+.card-details p:nth-of-type(3) {
+    font-family: fontA;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.6rem;
+    color: #5C6A79;
+    padding: 10px 0px;
+    line-height: 15px;
+}
+.card-stars-review {
+    padding: 0;
+}
+.star{
+    font-size: 0.8rem;
+    color: #F2C94C;
+}
+.no-star {
+   color: #EEEDF5;
+}
+.review {
+    font-family: fontA;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.6rem;  
+    color: #5C6A79;
+    margin-left: 8px;
+}
+.card-cash span:first-child,
+.card-cash span:last-child {
+    font-family: fontA;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.card-cash span:first-child {
+    color: #1C2A39;
+}
+.card-cash span:last-child {
+    margin-left: 10px;
+    color: #5C6A79;
+}
+.card button {
+    display: block;
+    width: 100%;
+    background: none;
+    color: #4C3DB2;
+    border: 1px solid #4C3DB2;
+    padding: 20px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.card button:hover {
+    background: #4C3DB2;
+    color: white;
 }
 @media screen and (min-width: 600px) {
     .card-box {
