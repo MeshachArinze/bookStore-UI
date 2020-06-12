@@ -58,7 +58,12 @@
     line-height: 15px;
 }
 .card-stars-review {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
+}
+.stars {
+    margin-right: 8px;
 }
 .star{
     font-size: 0.8rem;
@@ -73,7 +78,7 @@
     font-weight: normal;
     font-size: 0.6rem;  
     color: #5C6A79;
-    margin-left: 8px;
+    
 }
 .card-cash span:first-child,
 .card-cash span:last-child {
