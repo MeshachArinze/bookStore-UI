@@ -66,9 +66,9 @@
 }
 .stars {
     margin-right: 8px;
+    font-size: 0.8rem;
 }
 .star{
-    font-size: 0.8rem;
     color: #F2C94C;
 }
 .no-star {
