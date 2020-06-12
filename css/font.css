@@ -1,0 +1,9 @@
+@font-face {
+    font-family: fontA;
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: fontB;
+    font-style: oblique;
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
