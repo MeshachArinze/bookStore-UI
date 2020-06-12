@@ -54,7 +54,7 @@ body {
     outline: none;
 }
 .nav-menu {
-    background: #E5E5E5;
+   /*  background: #E5E5E5; */
     height: 0px;
     transform: translateY(-30%);
     transition: all 0.5s;
@@ -92,7 +92,7 @@ body {
     font-family: fontB;
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
 }
 .nav-icons {
